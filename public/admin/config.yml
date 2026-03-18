@@ -1,0 +1,198 @@
+backend:
+  name: github
+  repo: SPCOdesa/women.org.ua
+  branch: main
+  base_url: https://women.org.ua/
+  auth_endpoint: api/auth
+
+# Uncomment the line below to use local proxy for development (run: npx decap-server)
+# local_backend: true
+
+media_folder: public/images
+public_folder: /images
+
+# File collections edit a single JSON file each — no "title" field required
+collections:
+  - name: tenders
+    label: Тендери
+    files:
+      - name: tenders
+        label: Тендери
+        file: content/data/tenders.json
+        fields:
+          - label: Поточні тендери
+            name: current
+            widget: list
+            fields:
+              - { label: Назва, name: title, widget: string }
+              - { label: Опис, name: description, widget: text }
+              - { label: Дата початку, name: startDate, widget: string }
+              - { label: Дата закінчення, name: endDate, widget: string }
+              - { label: Посилання, name: link, widget: string }
+          - label: Архів тендерів
+            name: archived
+            widget: list
+            fields:
+              - { label: Назва, name: title, widget: string }
+              - { label: Опис, name: description, widget: text }
+              - { label: Дата початку, name: startDate, widget: string }
+              - { label: Дата закінчення, name: endDate, widget: string }
+              - { label: Посилання, name: link, widget: string }
+
+  - name: partners
+    label: Партнери
+    files:
+      - name: partners
+        label: Партнери
+        file: content/data/partners.json
+        fields:
+          - label: Список партнерів
+            name: partners
+            widget: list
+            fields:
+              - { label: Назва, name: name, widget: string }
+              - { label: Логотип, name: logo, widget: image }
+              - { label: Сайт, name: website, widget: string, required: false }
+              - { label: Опис, name: description, widget: string }
+
+  - name: policies
+    label: Політики
+    files:
+      - name: policies
+        label: Політики
+        file: content/data/policies.json
+        fields:
+          - label: Список політик
+            name: policies
+            widget: list
+            fields:
+              - { label: Назва (UA), name: name, widget: string }
+              - { label: Назва (EN), name: nameEn, widget: string }
+              - { label: Опис (UA), name: description, widget: text }
+              - { label: Опис (EN), name: descriptionEn, widget: text }
+              - { label: Шлях до файлу, name: path, widget: string }
+
+  - name: annual_reports
+    label: Річні звіти
+    files:
+      - name: annual_reports
+        label: Річні звіти
+        file: content/data/annual-reports.json
+        fields:
+          - label: Звіти
+            name: reports
+            widget: list
+            fields:
+              - { label: Рік, name: year, widget: string }
+              - { label: Обкладинка, name: coverImage, widget: image }
+
+  - name: translations
+    label: Переклади
+    files:
+      - name: translations_uk
+        label: Українська мова
+        file: content/data/translations-uk.json
+        fields:
+          - label: Назва сайту
+            name: siteName
+            widget: string
+          - label: Навігація
+            name: nav
+            widget: object
+            fields:
+              - { label: Про нас, name: about, widget: string }
+              - { label: Діяльність, name: directions, widget: string }
+              - { label: Медіа, name: media, widget: string }
+              - { label: Політики, name: policies, widget: string }
+              - { label: Тендери, name: tenders, widget: string }
+              - { label: Річні звіти, name: annualReports, widget: string }
+              - { label: Партнери, name: partners, widget: string }
+              - { label: Контакти, name: contacts, widget: string }
+          - label: Головна сторінка — герой
+            name: homeHero
+            widget: object
+            fields:
+              - { label: Заголовок, name: title, widget: string }
+              - { label: Підзаголовок, name: subtitle, widget: text }
+              - { label: Кнопка, name: cta, widget: string }
+          - label: Про нас
+            name: about
+            widget: object
+            fields:
+              - label: Місія — заголовок
+                name: missionTitle
+                widget: string
+              - label: Місія — текст
+                name: missionText
+                widget: text
+              - label: Про організацію — заголовок
+                name: visionTitle
+                widget: string
+              - label: Про організацію — текст
+                name: visionText
+                widget: text
+          - label: Контакти
+            name: contacts
+            widget: object
+            fields:
+              - { label: Адреса, name: address, widget: string }
+              - { label: Телефони, name: phone, widget: string }
+              - { label: Email, name: email, widget: string }
+              - { label: Години роботи, name: hours, widget: string }
+          - label: Футер
+            name: footer
+            widget: object
+            fields:
+              - { label: Опис організації, name: description, widget: text }
+
+      - name: translations_en
+        label: English
+        file: content/data/translations-en.json
+        fields:
+          - label: Site name
+            name: siteName
+            widget: string
+          - label: Navigation
+            name: nav
+            widget: object
+            fields:
+              - { label: About Us, name: about, widget: string }
+              - { label: Directions, name: directions, widget: string }
+              - { label: Media, name: media, widget: string }
+              - { label: Policies, name: policies, widget: string }
+              - { label: Tenders, name: tenders, widget: string }
+              - { label: Annual Reports, name: annualReports, widget: string }
+              - { label: Partners, name: partners, widget: string }
+              - { label: Contacts, name: contacts, widget: string }
+          - label: Home page — hero
+            name: homeHero
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Subtitle, name: subtitle, widget: text }
+              - { label: Button, name: cta, widget: string }
+          - label: About
+            name: about
+            widget: object
+            fields:
+              - { label: Mission title, name: missionTitle, widget: string }
+              - { label: Mission text, name: missionText, widget: text }
+              - { label: Vision title, name: visionTitle, widget: string }
+              - { label: Vision text, name: visionText, widget: text }
+          - label: Contacts
+            name: contacts
+            widget: object
+            fields:
+              - { label: Address, name: address, widget: string }
+              - { label: Phones, name: phone, widget: string }
+              - { label: Email, name: email, widget: string }
+              - { label: Working hours, name: hours, widget: string }
+          - label: Footer
+            name: footer
+            widget: object
+            fields:
+              - {
+                  label: Organization description,
+                  name: description,
+                  widget: text,
+                }

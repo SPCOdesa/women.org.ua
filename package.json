@@ -1,0 +1,24 @@
+{
+  "name": "womens-center-svelte",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^5.0.2",
+    "@tailwindcss/vite": "^4.1.12",
+    "svelte": "^5.18.2",
+    "tailwindcss": "^4.1.12",
+    "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "lucide-svelte": "^0.487.0",
+    "svelte-spa-router": "^4.0.1",
+    "decap-cms-app": "^3.0.0",
+    "decap-cms-backend-github": "^3.0.0"
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "policies": [
+    {
+      "name": "КАДРОВА ПОЛІТИКА",
+      "nameEn": "HR Policy",
+      "description": "Політика управління персоналом та кадрових процедур організації",
+      "descriptionEn": "Policy for personnel management and HR procedures",
+      "file": "/documents/polytic/КАДРОВА-ПОЛІТИКА.pdf"
+    },
+    {
+      "name": "КОДЕКС ЕТИЧНОЇ ПОВЕДІНКИ",
+      "nameEn": "Code of Ethical Conduct",
+      "description": "Етичні норми та принципи поведінки членів організації",
+      "descriptionEn": "Ethical standards and principles of conduct for organization members",
+      "file": "/documents/polytic/КОДЕКС-ЕТИЧНОЇ-ПОВЕДІНКИ.pdf"
+    },
+    {
+      "name": "ПОЛІТИКА БЕЗПЕКИ",
+      "nameEn": "Security Policy",
+      "description": "Заходи та процедури забезпечення безпеки організації",
+      "descriptionEn": "Measures and procedures for organizational security",
+      "file": "/documents/polytic/ПОЛІТИКА-БЕЗПЕКИ.pdf"
+    },
+    {
+      "name": "ПОЛІТИКА З ВИКРИВАННЯ ПОРУШЕНЬ",
+      "nameEn": "Whistleblowing Policy",
+      "description": "Процедури повідомлення про порушення та захисту викривачів",
+      "descriptionEn": "Procedures for reporting violations and whistleblower protection",
+      "file": "/documents/polytic/ПОЛІТИКА-З-ВИКРИВАННЯ-ПОРУШЕНЬ.pdf"
+    },
+    {
+      "name": "ПОЛІТИКА З ЕКОЛОГІЇ ТА ОХОРОНИ НАВКОЛИШНЬОГО СЕРЕДОВИЩА",
+      "nameEn": "Environmental Policy",
+      "description": "Принципи екологічної відповідальності та охорони природи",
+      "descriptionEn": "Principles of environmental responsibility and nature protection",
+      "file": "/documents/polytic/ПОЛІТИКА-З-ЕКОЛОГІЇ-ТА-ОХОРОНИ-НАВКОЛИШНЬОГО-СЕРЕДОВИЩА.pdf"
+    },
+    {
+      "name": "ПОЛІТИКА ЗАПОБІГАННЯ ШАХРАЙСТВУ",
+      "nameEn": "Anti-Fraud Policy",
+      "description": "Заходи протидії шахрайству та фінансовим порушенням",
+      "descriptionEn": "Measures to prevent fraud and financial violations",
+      "file": "/documents/polytic/ПОЛІТИКА-ЗАПОБІГАННЯ-ШАХРАЙСТВУ.pdf"
+    },
+    {
+      "name": "ПОЛІТИКА ЗАХИСТУ ДІТЕЙ",
+      "nameEn": "Child Protection Policy",
+      "description": "Стандарти та процедури захисту дітей від насильства та експлуатації",
+      "descriptionEn": "Standards and procedures for protecting children from violence and exploitation",
+      "file": "/documents/polytic/ПОЛІТИКА-ЗАХИСТУ-ДІТЕЙ.pdf"
+    },
+    {
+      "name": "ПОЛІТИКА ІЗ ЗАКУПІВЕЛЬ",
+      "nameEn": "Procurement Policy",
+      "description": "Процедури та правила здійснення закупівель товарів та послуг",
+      "descriptionEn": "Procedures and rules for procurement of goods and services",
+      "file": "/documents/polytic/ПОЛІТИКА-ІЗ-ЗАКУПІВЕЛЬ.pdf"
+    },
+    {
+      "name": "ПОЛІТИКА ІЗ ЗАЛУЧЕННЯ КОШТІВ ТА ФАНДРЕЙЗИНГОВА СТРАТЕГІЯ",
+      "nameEn": "Fundraising Policy and Strategy",
+      "description": "Стратегія залучення фінансування та управління ресурсами",
+      "descriptionEn": "Strategy for fundraising and resource management",
+      "file": "/documents/polytic/ПОЛІТИКА-ІЗ-ЗАЛУЧЕННЯ-КОШТІВ-ТА-ФАНДРЕЙЗИНГОВА-СТРАТЕГІЯ.pdf"
+    },
+    {
+      "name": "ПОЛІТИКА СТАЛИХ ЗАКУПІВЕЛЬ",
+      "nameEn": "Sustainable Procurement Policy",
+      "description": "Принципи екологічно та соціально відповідальних закупівель",
+      "descriptionEn": "Principles of environmentally and socially responsible procurement",
+      "file": "/documents/polytic/ПОЛІТИКА-СТАЛИХ-ЗАКУПІВЕЛЬ.pdf"
+    },
+    {
+      "name": "ПОЛІТИКА ЩОДО ВИРІШЕННЯ КОНФЛІКТІВ",
+      "nameEn": "Conflict Resolution Policy",
+      "description": "Процедури мирного вирішення конфліктів та спорів",
+      "descriptionEn": "Procedures for peaceful conflict and dispute resolution",
+      "file": "/documents/polytic/ПОЛІТИКА-ЩОДО-ВИРІШЕННЯ-КОНФЛІКТІВ.pdf"
+    },
+    {
+      "name": "ПОЛІТИКА ЩОДО ЗАПОБІГАННЯ СЕКСУАЛЬНІЙ ЕКСПЛУАТАЦІЇ ТА НАРУЗІ",
+      "nameEn": "Sexual Exploitation and Abuse Prevention Policy",
+      "description": "Заходи запобігання сексуальній експлуатації та насильству",
+      "descriptionEn": "Measures to prevent sexual exploitation and abuse",
+      "file": "/documents/polytic/ПОЛІТИКА-ЩОДО-ЗАПОБІГАННЯ-СЕКСУАЛЬНІЙ-ЕКСПЛУАТАЦІЇ-ТА-НАРУЗІ.pdf"
+    },
+    {
+      "name": "ПОЛІТИКА ЩОДО СКЛАДСЬКОГО УПРАВЛІННЯ",
+      "nameEn": "Warehouse Management Policy",
+      "description": "Процедури управління складськими запасами та матеріалами",
+      "descriptionEn": "Procedures for warehouse inventory and materials management",
+      "file": "/documents/polytic/ПОЛІТИКА-ЩОДО-СКЛАДСЬКОГО-УПРАВЛІННЯ.pdf"
+    },
+    {
+      "name": "СТРУКТУРА ОРГАНІЗАЦІЇ",
+      "nameEn": "Organizational Structure",
+      "description": "Схема організаційної структури та розподілу відповідальності",
+      "descriptionEn": "Organizational structure diagram and responsibility distribution",
+      "file": "/documents/polytic/СТРУКТУРА-ОРГАНІЗАЦІЇ.pdf"
+    }
+  ]
+}

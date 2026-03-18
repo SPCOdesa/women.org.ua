@@ -1,0 +1,462 @@
+backend:
+  name: github
+  repo: SPCOdesa/women.org.ua
+  branch: main
+  base_url: https://women.org.ua/
+  auth_endpoint: api/auth
+
+# Uncomment the line below to use local proxy for development (run: npx decap-server)
+# local_backend: true
+
+media_folder: public/images/media
+public_folder: /images
+document_folder: public/documents
+public_document_folder: /documents
+
+# File collections edit a single JSON file each — no "title" field required
+collections:
+  - name: tenders
+    label: Тендери
+    files:
+      - name: tenders
+        label: Тендери
+        file: content/data/tenders.json
+        fields:
+          - label: Поточні тендери
+            name: current
+            widget: list
+            fields:
+              - { label: Назва, name: title, widget: string }
+              - { label: Опис, name: description, widget: text }
+              - { label: Дата початку, name: startDate, widget: string }
+              - { label: Дата закінчення, name: endDate, widget: string }
+              - { label: Посилання, name: link, widget: string }
+          - label: Архів тендерів
+            name: archived
+            widget: list
+            fields:
+              - { label: Назва, name: title, widget: string }
+              - { label: Опис, name: description, widget: text }
+              - { label: Дата початку, name: startDate, widget: string }
+              - { label: Дата закінчення, name: endDate, widget: string }
+              - { label: Посилання, name: link, widget: string }
+
+  - name: partners
+    label: Партнери
+    files:
+      - name: partners
+        label: Партнери
+        file: content/data/partners.json
+        fields:
+          - label: Список партнерів
+            name: partners
+            widget: list
+            fields:
+              - { label: Назва, name: name, widget: string }
+              - { label: Логотип, name: logo, widget: image }
+              - { label: Сайт, name: website, widget: string, required: false }
+              - { label: Опис, name: description, widget: string }
+
+  - name: policies
+    label: Політики
+    files:
+      - name: policies
+        label: Політики
+        file: content/data/policies.json
+        fields:
+          - label: Список політик
+            name: policies
+            widget: list
+            fields:
+              - { label: Назва (UA), name: name, widget: string }
+              - { label: Назва (EN), name: nameEn, widget: string }
+              - { label: Опис (UA), name: description, widget: text }
+              - { label: Опис (EN), name: descriptionEn, widget: text }
+              - {
+                  label: PDF файл,
+                  name: file,
+                  widget: file,
+                  media_folder: public/documents/polytic,
+                  public_folder: /documents/polytic,
+                  allow_multiple: false,
+                }
+
+  - name: media
+    label: Медіа / Фотогалерея
+    files:
+      - name: media
+        label: Фотогалерея
+        file: content/data/media.json
+        fields:
+          - label: Фотографії
+            name: images
+            widget: list
+            fields:
+              - {
+                  label: Фото,
+                  name: src,
+                  widget: image,
+                  media_folder: public/images/media,
+                  public_folder: /images/media,
+                }
+              - { label: Підпис (UA), name: alt, widget: string }
+              - { label: Підпис (EN), name: altEn, widget: string }
+
+  - name: annual_reports
+    label: Річні звіти
+    files:
+      - name: annual_reports
+        label: Річні звіти
+        file: content/data/annual-reports.json
+        fields:
+          - label: Звіти
+            name: reports
+            widget: list
+            fields:
+              - { label: Рік, name: year, widget: string }
+              - { label: Обкладинка, name: coverImage, widget: image }
+
+  - name: translations
+    label: Переклади
+    files:
+      - name: translations_uk
+        label: Українська
+        file: content/data/translations-uk.json
+        fields:
+          - { label: Назва сайту, name: siteName, widget: string }
+          - label: Навігація
+            name: nav
+            widget: object
+            fields:
+              - { label: Про нас, name: about, widget: string }
+              - { label: Діяльність, name: directions, widget: string }
+              - { label: Медіа, name: media, widget: string }
+              - { label: Політики, name: policies, widget: string }
+              - { label: Тендери, name: tenders, widget: string }
+              - { label: Річні звіти, name: annualReports, widget: string }
+              - { label: Партнери, name: partners, widget: string }
+              - { label: Контакти, name: contacts, widget: string }
+          - label: Головна
+            name: home
+            widget: object
+            fields:
+              - label: Герой
+                name: hero
+                widget: object
+                fields:
+                  - { label: Заголовок, name: title, widget: string }
+                  - { label: Підзаголовок, name: subtitle, widget: text }
+                  - { label: Кнопка, name: cta, widget: string }
+              - label: Принципи
+                name: services
+                widget: object
+                fields:
+                  - { label: Заголовок блоку, name: title, widget: string }
+                  - label: Феміністичні принципи
+                    name: testing
+                    widget: object
+                    fields:
+                      - { label: Заголовок, name: title, widget: string }
+                      - { label: Опис, name: description, widget: text }
+                  - label: Протидія дискримінації
+                    name: support
+                    widget: object
+                    fields:
+                      - { label: Заголовок, name: title, widget: string }
+                      - { label: Опис, name: description, widget: text }
+                  - label: Якість життя
+                    name: medical
+                    widget: object
+                    fields:
+                      - { label: Заголовок, name: title, widget: string }
+                      - { label: Опис, name: description, widget: text }
+                  - label: Лідерство та розвиток
+                    name: education
+                    widget: object
+                    fields:
+                      - { label: Заголовок, name: title, widget: string }
+                      - { label: Опис, name: description, widget: text }
+          - label: Про нас
+            name: about
+            widget: object
+            fields:
+              - { label: Заголовок, name: title, widget: string }
+              - { label: Підзаголовок, name: subtitle, widget: string }
+              - label: Місія
+                name: mission
+                widget: object
+                fields:
+                  - { label: Заголовок, name: title, widget: string }
+                  - { label: Текст, name: text, widget: text }
+              - label: Про організацію
+                name: vision
+                widget: object
+                fields:
+                  - { label: Заголовок, name: title, widget: string }
+                  - { label: Текст, name: text, widget: text }
+          - label: Напрямки діяльності
+            name: directions
+            widget: object
+            fields:
+              - label: Герой
+                name: hero
+                widget: object
+                fields:
+                  - { label: Заголовок, name: title, widget: string }
+                  - { label: Підзаголовок, name: subtitle, widget: string }
+              - label: Соціальні послуги
+                name: social
+                widget: object
+                fields:
+                  - { label: Заголовок, name: title, widget: string }
+                  - {
+                      label: Послуги,
+                      name: services,
+                      widget: list,
+                      field: { label: Послуга, name: item, widget: string },
+                    }
+              - label: Гуманітарні послуги
+                name: humanitarian
+                widget: object
+                fields:
+                  - { label: Заголовок, name: title, widget: string }
+                  - {
+                      label: Послуги,
+                      name: services,
+                      widget: list,
+                      field: { label: Послуга, name: item, widget: string },
+                    }
+              - label: Психологічні та медичні послуги
+                name: psychological
+                widget: object
+                fields:
+                  - { label: Заголовок, name: title, widget: string }
+                  - {
+                      label: Послуги,
+                      name: services,
+                      widget: list,
+                      field: { label: Послуга, name: item, widget: string },
+                    }
+              - label: Інші послуги
+                name: other
+                widget: object
+                fields:
+                  - { label: Заголовок, name: title, widget: string }
+                  - {
+                      label: Послуги,
+                      name: services,
+                      widget: list,
+                      field: { label: Послуга, name: item, widget: string },
+                    }
+          - label: Контакти
+            name: contacts
+            widget: object
+            fields:
+              - { label: Заголовок, name: title, widget: string }
+              - { label: Підзаголовок, name: subtitle, widget: string }
+              - label: Гаряча лінія
+                name: hotline
+                widget: object
+                fields:
+                  - { label: Заголовок, name: title, widget: string }
+                  - { label: Текст, name: text, widget: string }
+                  - { label: Номер, name: number, widget: string }
+              - label: Контактна інформація
+                name: info
+                widget: object
+                fields:
+                  - { label: Адреса (мітка), name: address, widget: string }
+                  - { label: Адреса (текст), name: addressText, widget: string }
+                  - { label: Телефони (мітка), name: phone, widget: string }
+                  - { label: Телефони (текст), name: phoneText, widget: string }
+                  - { label: Email (мітка), name: email, widget: string }
+                  - { label: Email (текст), name: emailText, widget: string }
+                  - {
+                      label: Години роботи (мітка),
+                      name: hours,
+                      widget: string,
+                    }
+                  - {
+                      label: Години роботи (текст),
+                      name: hoursText,
+                      widget: string,
+                    }
+          - label: Футер
+            name: footer
+            widget: object
+            fields:
+              - { label: Опис організації, name: description, widget: text }
+              - { label: Права, name: rights, widget: string }
+
+      - name: translations_en
+        label: English
+        file: content/data/translations-en.json
+        fields:
+          - { label: Site name, name: siteName, widget: string }
+          - label: Navigation
+            name: nav
+            widget: object
+            fields:
+              - { label: About Us, name: about, widget: string }
+              - { label: Directions, name: directions, widget: string }
+              - { label: Media, name: media, widget: string }
+              - { label: Policies, name: policies, widget: string }
+              - { label: Tenders, name: tenders, widget: string }
+              - { label: Annual Reports, name: annualReports, widget: string }
+              - { label: Partners, name: partners, widget: string }
+              - { label: Contacts, name: contacts, widget: string }
+          - label: Home
+            name: home
+            widget: object
+            fields:
+              - label: Hero
+                name: hero
+                widget: object
+                fields:
+                  - { label: Title, name: title, widget: string }
+                  - { label: Subtitle, name: subtitle, widget: text }
+                  - { label: Button, name: cta, widget: string }
+              - label: Principles
+                name: services
+                widget: object
+                fields:
+                  - { label: Section title, name: title, widget: string }
+                  - label: Feminist Principles
+                    name: testing
+                    widget: object
+                    fields:
+                      - { label: Title, name: title, widget: string }
+                      - { label: Description, name: description, widget: text }
+                  - label: Anti-Discrimination
+                    name: support
+                    widget: object
+                    fields:
+                      - { label: Title, name: title, widget: string }
+                      - { label: Description, name: description, widget: text }
+                  - label: Quality of Life
+                    name: medical
+                    widget: object
+                    fields:
+                      - { label: Title, name: title, widget: string }
+                      - { label: Description, name: description, widget: text }
+                  - label: Leadership and Development
+                    name: education
+                    widget: object
+                    fields:
+                      - { label: Title, name: title, widget: string }
+                      - { label: Description, name: description, widget: text }
+          - label: About
+            name: about
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Subtitle, name: subtitle, widget: string }
+              - label: Mission
+                name: mission
+                widget: object
+                fields:
+                  - { label: Title, name: title, widget: string }
+                  - { label: Text, name: text, widget: text }
+              - label: Vision
+                name: vision
+                widget: object
+                fields:
+                  - { label: Title, name: title, widget: string }
+                  - { label: Text, name: text, widget: text }
+          - label: Areas of Activity
+            name: directions
+            widget: object
+            fields:
+              - label: Hero
+                name: hero
+                widget: object
+                fields:
+                  - { label: Title, name: title, widget: string }
+                  - { label: Subtitle, name: subtitle, widget: string }
+              - label: Social Services
+                name: social
+                widget: object
+                fields:
+                  - { label: Title, name: title, widget: string }
+                  - {
+                      label: Services,
+                      name: services,
+                      widget: list,
+                      field: { label: Service, name: item, widget: string },
+                    }
+              - label: Humanitarian Services
+                name: humanitarian
+                widget: object
+                fields:
+                  - { label: Title, name: title, widget: string }
+                  - {
+                      label: Services,
+                      name: services,
+                      widget: list,
+                      field: { label: Service, name: item, widget: string },
+                    }
+              - label: Psychological & Medical Services
+                name: psychological
+                widget: object
+                fields:
+                  - { label: Title, name: title, widget: string }
+                  - {
+                      label: Services,
+                      name: services,
+                      widget: list,
+                      field: { label: Service, name: item, widget: string },
+                    }
+              - label: Other Services
+                name: other
+                widget: object
+                fields:
+                  - { label: Title, name: title, widget: string }
+                  - {
+                      label: Services,
+                      name: services,
+                      widget: list,
+                      field: { label: Service, name: item, widget: string },
+                    }
+          - label: Contacts
+            name: contacts
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Subtitle, name: subtitle, widget: string }
+              - label: Hotline
+                name: hotline
+                widget: object
+                fields:
+                  - { label: Title, name: title, widget: string }
+                  - { label: Text, name: text, widget: string }
+                  - { label: Number, name: number, widget: string }
+              - label: Contact Information
+                name: info
+                widget: object
+                fields:
+                  - { label: Address (label), name: address, widget: string }
+                  - { label: Address (text), name: addressText, widget: string }
+                  - { label: Phones (label), name: phone, widget: string }
+                  - { label: Phones (text), name: phoneText, widget: string }
+                  - { label: Email (label), name: email, widget: string }
+                  - { label: Email (text), name: emailText, widget: string }
+                  - {
+                      label: Working hours (label),
+                      name: hours,
+                      widget: string,
+                    }
+                  - {
+                      label: Working hours (text),
+                      name: hoursText,
+                      widget: string,
+                    }
+          - label: Footer
+            name: footer
+            widget: object
+            fields:
+              - {
+                  label: Organization description,
+                  name: description,
+                  widget: text,
+                }
+              - { label: Rights, name: rights, widget: string }

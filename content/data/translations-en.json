@@ -1,0 +1,285 @@
+{
+  "siteName": "Support, Protection and Care",
+  "orgName": "Women's Center NGO",
+  "nav": {
+    "about": "About Us",
+    "directions": "Areas of Activity",
+    "media": "Media",
+    "policies": "Policies and Procedures",
+    "tenders": "Tenders",
+    "annualReports": "Annual Reports",
+    "partners": "Partners",
+    "contacts": "Contacts"
+  },
+  "home": {
+    "hero": {
+      "title": "Support, Protection and Care",
+      "subtitle": "We support vulnerable groups by providing them with social, legal and psychological assistance",
+      "cta": "Learn More"
+    },
+    "services": {
+      "title": "Our Principles",
+      "testing": {
+        "title": "Feminist Principles",
+        "description": "We are guided by feminist principles and actively work to improve women's lives, contributing to the formation of gender values."
+      },
+      "support": {
+        "title": "Anti-Discrimination",
+        "description": "We prevent and eliminate the causes of discrimination against women, work to change patriarchal systems, and protect women's rights and freedoms."
+      },
+      "medical": {
+        "title": "Quality of Life",
+        "description": "We strive to improve women's quality of life by uniting the efforts of the community and the state."
+      },
+      "education": {
+        "title": "Leadership and Development",
+        "description": "We work to promote the growth of women's role in society, their involvement in political and public life, and support the development of leadership qualities and entrepreneurship."
+      }
+    },
+    "board": {
+      "title": "Organizational Structure",
+      "subtitle": "Our team of professionals",
+      "members": [
+        {
+          "name": "Ludmila Vorozhylova",
+          "position": "Board Chair"
+        },
+        {
+          "name": "Larisa Tsekhovich",
+          "position": "Vice Chair"
+        },
+        {
+          "name": "Daria Koval",
+          "position": "Gender-Based Violence Expert"
+        },
+        {
+          "name": "Irina Fomena",
+          "position": "Fundraising Manager"
+        },
+        {
+          "name": "Veronika Satanovska",
+          "position": "Childcare Specialist"
+        },
+        {
+          "name": "Victoria Onischenko",
+          "position": "Chief Accountant"
+        },
+        {
+          "name": "Anatoliy Tsekhovich",
+          "position": "Psychologist"
+        },
+        {
+          "name": "Mykhailo Leonov",
+          "position": "Logistics Manager"
+        }
+      ]
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Helping people since 2017",
+    "hero": {
+      "title": "About Us",
+      "subtitle": "Helping people since 2017"
+    },
+    "description": "Contributing to the development of civil society, economic, political and social reforms in Ukraine, protecting rights and freedoms, improving the quality of life of vulnerable women through the combined efforts of the community and the state",
+    "mission": {
+      "title": "Our Mission",
+      "text": "We provide comprehensive support to vulnerable groups, including social, legal and psychological assistance. We strive to create a safe environment where everyone can receive the help they need without fear or discrimination."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "text": "A society where all people, regardless of status, have equal rights, access to quality healthcare and social support. We seek systemic changes that ensure justice and dignity for all."
+    },
+    "beneficiaries": {
+      "title": "ORGANIZATION BENEFICIARIES",
+      "groups": [
+        "Women and girls and teenage boys in areas where military operations are ongoing, who have experienced/are at high risk of sexual violence and other abuse",
+        "Survivors of sexual violence who do not have access to life-saving services, including clinical management of rape cases",
+        "Elderly women and persons with disabilities who remain in Ukraine due to immobility and are at risk of sexual violence and GBV, including by military and armed personnel",
+        "Women in Ukraine experiencing domestic violence, pregnant and nursing women",
+        "Women combatants (some of whom may become prisoners of war) and medical personnel who are attacked",
+        "Internally displaced persons (IDPs), female-headed households who are leaving and are at high risk of GBV",
+        "LGBTI+ persons who face persecution by armed forces, and transgender persons are denied exit from Ukraine due to lack of documents",
+        "Women and girls at risk of sexual exploitation and survival sex",
+        "Representatives of other nationalities, such as students and migrants, especially Black and ethnic minorities – non-citizens who face persecution and discrimination at the border",
+        "Women who use drugs who have difficulty accessing treatment and support",
+        "Women and girls living with HIV or suffering from AIDS who have difficulty accessing medication and support",
+        "Ukrainian citizens who have left for Poland, Romania, Hungary, Moldova, Slovakia, Belarus and other countries, who are almost all women and children and are at risk of GBV, sexual exploitation and human trafficking",
+        "Roma, who have historically experienced and continue to experience discrimination in the current crisis"
+      ]
+    }
+  },
+  "projects": {
+    "hero": {
+      "title": "Projects",
+      "subtitle": "Our current and completed programs"
+    }
+  },
+  "directions": {
+    "hero": {
+      "title": "Areas of Activity",
+      "subtitle": "Comprehensive support and services for vulnerable groups"
+    },
+    "social": {
+      "title": "SOCIAL SERVICES",
+      "services": [
+        "Case management and social support",
+        "Referral to NGOs for additional social services",
+        "Referral to government institutions for services",
+        "Emotional support",
+        "Collection and meeting urgent needs of beneficiaries",
+        "Employment assistance",
+        "Provision of information and educational materials",
+        "Counseling and case management"
+      ]
+    },
+    "humanitarian": {
+      "title": "HUMANITARIAN SERVICES",
+      "services": [
+        "Provision of food packages",
+        "Transportation to the border of Ukraine for crossing",
+        "Provision of hygiene kits",
+        "Provision of household kits",
+        "Internet access and laptop use",
+        "Provision of medical kits",
+        "Provision of children's kits",
+        "Provision of clothing and footwear"
+      ]
+    },
+    "psychological": {
+      "title": "PSYCHOLOGICAL AND MEDICAL SERVICES",
+      "services": [
+        "Individual and group psychological consultations",
+        "Self-help groups and psychological information sessions",
+        "Conducting workshops and art therapy activities",
+        "Assistance in obtaining medical care",
+        "Medical professional consultations",
+        "Assistance in obtaining medical examination and treatment",
+        "Referral to medical and preventive institutions",
+        "Training in self-employment, leadership and personal growth",
+        "Counseling and testing for HIV/AIDS and COVID-19"
+      ]
+    },
+    "other": {
+      "title": "OTHER CONSULTATIONS, SERVICES AND REFERRALS",
+      "services": [
+        "Legal consultations",
+        "Consultations on obtaining financial assistance",
+        "Consultations on concluding a declaration with a family doctor",
+        "Employment consultations",
+        "Consultations on document restoration",
+        "Referral to the border for those wishing to leave Ukraine",
+        "Assistance in finding free temporary housing",
+        "Assistance in resocialization and reintegration"
+      ]
+    }
+  },
+  "media": {
+    "hero": {
+      "title": "Media",
+      "subtitle": ""
+    }
+  },
+  "tenders": {
+    "hero": {
+      "title": "Tenders",
+      "subtitle": "Open procurements and announcements"
+    },
+    "tabs": {
+      "current": "Current Tenders",
+      "archive": "Tenders Archive"
+    },
+    "titles": {
+      "current": "OPEN TENDERS",
+      "archive": "TENDERS ARCHIVE"
+    },
+    "subtitles": {
+      "current": "Current tenders and procurements",
+      "archive": "Completed tenders and procurements"
+    },
+    "grid": {
+      "startDate": "Start:",
+      "endDate": "Deadline:",
+      "viewTender": "View Tender",
+      "noTenders": "No active tenders at the moment"
+    }
+  },
+  "documents": {
+    "title": "Documents",
+    "policies": "Policies and Procedures",
+    "tenders": "Tenders"
+  },
+  "policies": {
+    "hero": {
+      "title": "Policies and Procedures",
+      "subtitle": "Documents regulating the organization's activities"
+    },
+    "grid": {
+      "title": "POLICIES AND PROCEDURES",
+      "subtitle": "",
+      "view": "View",
+      "download": "Download",
+      "pdfDocument": "PDF document",
+      "pressEsc": "Press ESC to close"
+    },
+    "annualReports": {
+      "title": "ANNUAL REPORTS",
+      "subtitle": "",
+      "contactNote": "To receive the full report, please contact us",
+      "contactLink": "Contact Us"
+    }
+  },
+  "partners": {
+    "hero": {
+      "title": "Partners",
+      "subtitle": "Together we are stronger"
+    }
+  },
+  "orgStructure": {
+    "generalAssembly": "GENERAL ASSEMBLY",
+    "board": "ORGANIZATION BOARD",
+    "sectors": [
+      "PSYCHOLOGICAL SECTOR",
+      "SOCIAL SECTOR",
+      "DIRECTION COORDINATORS",
+      "LEGAL SECTOR",
+      "FINANCIAL SECTOR"
+    ],
+    "bottom": [
+      "PROJECT STAFF",
+      "INVOLVED SPECIALISTS",
+      "VOLUNTEERS"
+    ]
+  },
+  "contacts": {
+    "title": "Contacts",
+    "subtitle": "Get in touch with us",
+    "hotline": {
+      "title": "Hotline",
+      "text": "Free and confidential consultation",
+      "number": "0 800 500 451"
+    },
+    "info": {
+      "title": "Contact Information",
+      "address": "Address:",
+      "addressText": "12 Dalekoskhidna str., Odesa, 65006, Ukraine",
+      "phone": "Phones:",
+      "phoneText": "+38 (063) 322-31-45, +38 (093) 346-30-02",
+      "email": "Email:",
+      "emailText": "women.center.od@gmail.com",
+      "website": "Website:",
+      "websiteText": "www.women.org.ua",
+      "hours": "Working hours:",
+      "hoursText": "Mon-Fri: 9:00 AM - 6:00 PM",
+      "facebook": "Facebook:",
+      "facebookText": "@women.od"
+    }
+  },
+  "footer": {
+    "description": "Women's Center NGO - Support, Protection and Care. We provide comprehensive support to vulnerable groups",
+    "quickLinks": "Quick Links",
+    "followUs": "Follow Us",
+    "rights": "© 2026 Women's Center NGO. All rights reserved."
+  }
+}

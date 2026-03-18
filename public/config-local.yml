@@ -1,0 +1,62 @@
+backend:
+  name: test-repo
+
+media_folder: public/images
+public_folder: /images
+
+collections:
+  - name: tenders
+    label: Тендеры
+    folder: src/lib/data
+    file: tenders.json
+    format: json
+    fields:
+      - name: current
+        label: Активные тендеры
+        widget: list
+        fields:
+          - { name: title, label: Название, widget: string }
+          - { name: description, label: Описание, widget: text }
+          - { name: startDate, label: Дата начала, widget: string }
+          - { name: endDate, label: Дата окончания, widget: string }
+          - { name: link, label: Ссылка, widget: string }
+      - name: archived
+        label: Архивные тендеры
+        widget: list
+        fields:
+          - { name: title, label: Название, widget: string }
+          - { name: description, label: Описание, widget: text }
+          - { name: startDate, label: Дата начала, widget: string }
+          - { name: endDate, label: Дата окончания, widget: string }
+          - { name: link, label: Ссылка, widget: string }
+
+  - name: partners
+    label: Партнеры
+    folder: src/lib/data
+    file: partners.json
+    format: json
+    fields:
+      - name: partners
+        label: Партнеры
+        widget: list
+        fields:
+          - { name: name, label: Название, widget: string }
+          - { name: logo, label: Логотип, widget: image }
+          - { name: website, label: Веб-сайт, widget: string }
+          - { name: description, label: Описание, widget: text }
+
+  - name: policies
+    label: Политики
+    folder: src/lib/data
+    file: policies.json
+    format: json
+    fields:
+      - name: policies
+        label: Политики
+        widget: list
+        fields:
+          - { name: name, label: Название (УК), widget: string }
+          - { name: nameEn, label: Название (EN), widget: string }
+          - { name: description, label: Описание (УК), widget: text }
+          - { name: descriptionEn, label: Описание (EN), widget: text }
+          - { name: path, label: Путь к PDF, widget: string }

@@ -1,0 +1,100 @@
+{
+  "partners": [
+    {
+      "name": "UNFPA",
+      "logo": "/images/partners/UNFPA_logo.svg",
+      "website": "https://www.unfpa.org",
+      "description": "United Nations Population Fund"
+    },
+    {
+      "name": "UK aid",
+      "logo": "/images/partners/ukaid.webp",
+      "website": "https://www.gov.uk/government/organisations/uk-aid",
+      "description": "UK Aid"
+    },
+    {
+      "name": "OutRight Action International",
+      "logo": "/images/partners/OutRight.png",
+      "website": "https://www.outrightinternational.org",
+      "description": "OutRight Action International"
+    },
+    {
+      "name": "British Embassy Kyiv",
+      "logo": "/images/partners/british.jpeg",
+      "website": "https://www.gov.uk/world/organisations/british-embassy-kyiv",
+      "description": "British Embassy in Kyiv"
+    },
+    {
+      "name": "Global NPO PACT",
+      "logo": "/images/partners/pact.jpg",
+      "website": "https://www.pactworld.org",
+      "description": "PACT"
+    },
+    {
+      "name": "National Democratic Institute (NDI)",
+      "logo": "/images/partners/NDI.svg",
+      "website": "https://www.ndi.org",
+      "description": "NDI"
+    },
+    {
+      "name": "Feminist Fund MADRE",
+      "logo": "/images/partners/madre_logo_2020.png",
+      "website": "https://www.madre.org",
+      "description": "MADRE"
+    },
+    {
+      "name": "The Canada Fund for Local Initiatives",
+      "logo": "/images/partners/crown.jpg",
+      "website": "https://www.canada.ca",
+      "description": "Canada Fund"
+    },
+    {
+      "name": "Urgent Action Fund for Women's Human Rights",
+      "logo": "/images/partners/uaf_vertical.jpg",
+      "website": "https://www.urgentactionfund.org",
+      "description": "Urgent Action Fund"
+    },
+    {
+      "name": "Innovative Social Solutions",
+      "logo": "/images/partners/innnovative.png",
+      "website": "",
+      "description": "Innovative Social Solutions"
+    },
+    {
+      "name": "The Crown Agents Foundation",
+      "logo": "/images/partners/crown.jpg",
+      "website": "https://www.crownagents.com",
+      "description": "Crown Agents"
+    },
+    {
+      "name": "Human Rights NGO 'Faith, Hope, Love'",
+      "logo": "/images/partners/go.png",
+      "website": "",
+      "description": "Faith, Hope, Love"
+    },
+    {
+      "name": "Association of Women's Organizations of Odesa Oblast",
+      "logo": "/images/partners/ajooo.jpeg",
+      "website": "",
+      "description": "AJOOO"
+    },
+    {
+      "name": "Civic Center Nova Generatsiia",
+      "logo": "/images/partners/nova_gen.png",
+      "website": "",
+      "description": "Nova Generatsiia"
+    },
+    {
+      "name": "Ukrainian Women's Fund",
+      "logo": "/images/partners/uwoman.jpg",
+      "website": "",
+      "description": "Ukrainian Women's Fund"
+    },
+    {
+      "name": "Positive Women",
+      "logo": "/images/partners/positive-woman.png",
+      "website": "",
+      "description": "Positive Women"
+    }
+  ]
+}
