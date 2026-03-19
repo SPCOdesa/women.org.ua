@@ -53,7 +53,13 @@ collections:
             widget: list
             fields:
               - { label: Назва, name: name, widget: string }
-              - { label: Логотип, name: logo, widget: image }
+              - {
+                  label: Логотип,
+                  name: logo,
+                  widget: image,
+                  media_folder: /public/images/partners,
+                  public_folder: /images/partners,
+                }
               - { label: Сайт, name: website, widget: string, required: false }
               - { label: Опис, name: description, widget: string }
 
