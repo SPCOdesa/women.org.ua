@@ -9,7 +9,7 @@ backend:
 # local_backend: true
 
 media_folder: public/images/media
-public_folder: /images
+public_folder: /images/media
 document_folder: public/documents
 public_document_folder: /documents
 
@@ -53,13 +53,7 @@ collections:
             widget: list
             fields:
               - { label: Назва, name: name, widget: string }
-              - {
-                  label: Логотип,
-                  name: logo,
-                  widget: image,
-                  media_folder: /public/images/partners,
-                  public_folder: /images/partners,
-                }
+              - { label: Логотип, name: logo, widget: image }
               - { label: Сайт, name: website, widget: string, required: false }
               - { label: Опис, name: description, widget: string }
 
@@ -82,7 +76,7 @@ collections:
                   label: PDF файл,
                   name: file,
                   widget: file,
-                  media_folder: /public/documents/polytic,
+                  media_folder: public/documents/polytic,
                   public_folder: /documents/polytic,
                   allow_multiple: false,
                 }
@@ -102,7 +96,7 @@ collections:
                   label: Фото,
                   name: src,
                   widget: image,
-                  media_folder: /public/images/media,
+                  media_folder: public/images/media,
                   public_folder: /images/media,
                 }
               - { label: Підпис (UA), name: alt, widget: string }
@@ -118,9 +112,16 @@ collections:
           - label: Звіти
             name: reports
             widget: list
+            summary: "{{fields.year}}"
             fields:
               - { label: Рік, name: year, widget: string }
-              - { label: Обкладинка, name: coverImage, widget: image }
+              - {
+                  label: Обкладинка,
+                  name: coverImage,
+                  widget: image,
+                  media_folder: public/images/annual-reports,
+                  public_folder: /images/annual-reports,
+                }
 
   - name: translations
     label: Переклади
