@@ -8,7 +8,7 @@ backend:
 # Uncomment the line below to use local proxy for development (run: npx decap-server)
 # local_backend: true
 
-media_folder: public/images/media
+media_folder: /public/images/media
 public_folder: /images/media
 document_folder: public/documents
 public_document_folder: /documents
@@ -76,7 +76,7 @@ collections:
                   label: PDF файл,
                   name: file,
                   widget: file,
-                  media_folder: public/documents/polytic,
+                  media_folder: /public/documents/polytic,
                   public_folder: /documents/polytic,
                   allow_multiple: false,
                 }
@@ -96,7 +96,7 @@ collections:
                   label: Фото,
                   name: src,
                   widget: image,
-                  media_folder: public/images/media,
+                  media_folder: /public/images/media,
                   public_folder: /images/media,
                 }
               - { label: Підпис (UA), name: alt, widget: string }
@@ -119,7 +119,7 @@ collections:
                   label: Обкладинка,
                   name: coverImage,
                   widget: image,
-                  media_folder: public/images/annual-reports,
+                  media_folder: /public/images/annual-reports,
                   public_folder: /images/annual-reports,
                 }
 
